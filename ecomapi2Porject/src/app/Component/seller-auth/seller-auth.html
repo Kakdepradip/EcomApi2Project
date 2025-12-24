@@ -1,0 +1,27 @@
+
+<div class="signup-container">
+    <form class="signup-form" #sellersignUp="ngForm" (ngSubmit)="signUp(sellersignUp.value)">
+        <h2>Create Account</h2>
+
+        <div class="input-group">
+            <input class="form-input" ngModel name="name" type="text" required>
+            <label>Full Name</label>
+        </div>
+
+        <div class="input-group">
+            <input class="form-input" ngModel name="email" type="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-group">
+            <input class="form-input" ngModel name="password" type="password" required>
+            <label>Password</label>
+        </div>
+
+        <button type="submit" class="form-button">Sign Up</button>
+
+        <p class="login-text">Already have an account? <a href="#">Login</a></p>
+    </form>
+</div>
+
+
